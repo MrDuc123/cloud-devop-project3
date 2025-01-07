@@ -4,8 +4,8 @@ from sqlalchemy import Column, Integer, String, TIMESTAMP
 
 Base = declarative_base()
 
-class TokenTable(Base):
-    __tablename__ = 'token_table'
+class Token(Base):
+    __tablename__ = 'tokens'
     id = Column(Integer, primary_key=True)
     user_id = Column(Integer, nullable=False)
     token = Column(String(6), nullable=False)
