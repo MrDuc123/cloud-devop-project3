@@ -25,4 +25,4 @@ jobs:
       # Trigger the CodeBuild Project
       - name: Trigger AWS CodeBuild
         run: |
-          aws codebuild start-build --project-name <codebuild-project-name>
+          aws codebuild start-build --project-name project3
