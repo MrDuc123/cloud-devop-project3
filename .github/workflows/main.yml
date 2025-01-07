@@ -8,6 +8,9 @@ on:
 jobs:
   trigger-codebuild:
     runs-on: ubuntu-latest
+    permissions:
+          id-token: write
+          contents: read
 
     steps:
       # Checkout the repository
